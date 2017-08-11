@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html ng-app="MainApp" lang="es">
+<head>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF2IGGPIiiJFKAd6iykwlafpA5Rz7CTSg&callback=initMap"
+            async defer></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="index.js"></script>
+    <style>
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body ng-controller="mainController">
+<div id="map"></div>
+<script>
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -33.4474, lng: -70.6736},
+            zoom: 8
+        });
+        var marker = new google.maps.Marker({
+            position : {lat:-30.2115, lng: -70.1505},
+            map : map
+        });
+        var marker2 = new google.maps.Marker({
+            position : {lat:-45.5688, lng: -73.8980},
+            map : map
+        });
+        var marker3 = new google.maps.Marker({
+            position : {lat:-43.1506, lng: -73.6537},
+            map : map
+        });
+        var marker4 = new google.maps.Marker({
+            position : {lat:-33.4484, lng: -70.6523},
+            map : map
+        });
+        var marker5 = new google.maps.Marker({
+            position : {lat:-39.8136, lng: -73.2400},
+            map : map
+        });
+        var marker6 = new google.maps.Marker({
+            position : {lat:-20.47802, lng: -70.3169},
+            map : map
+        });
+        var marker7 = new google.maps.Marker({
+            position : {lat:-23.6537, lng: -70.4012},
+            map : map
+        });
+        var marker8 = new google.maps.Marker({
+            position : {lat:-27.3647, lng: -70.3311},
+            map : map
+        });
+        var marker9 = new google.maps.Marker({
+            position : {lat:-29.9199, lng: -71.2440},
+            map : map
+        });
+        var marker10 = new google.maps.Marker({
+            position : {lat:-33.0431, lng: -70.7422},
+            map : map
+        });
+        var marker11 = new google.maps.Marker({
+            position : {lat:-34.1703, lng: -70.7422},
+            map : map
+        });
+        var marker12 = new google.maps.Marker({
+            position : {lat:-36.8282, lng: -73.0429},
+            map : map
+        });
+        var marker13 = new google.maps.Marker({
+            position : {lat:-38.7342, lng:-72.5863},
+            map : map
+        });
+        var marker14 = new google.maps.Marker({
+            position : {lat:-35.4252, lng: -71.6636},
+            map : map
+        });
+        var marker15 = new google.maps.Marker({
+            position : {lat:-38.7342, lng: -72.5638},
+            map : map
+        });
+    }
+</script>
+</body>
+</html>
